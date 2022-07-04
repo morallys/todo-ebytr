@@ -1,0 +1,39 @@
+{
+  "name": "todo-ebytr",
+  "version": "1.0.0",
+  "description": "TODO List que ajuda na organização de tarefas individuais para melhorar a produtividade dos colaboradores.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compose:up": "(cd app && docker-compose up -d --build)",
+    "compose:down": "(cd app && docker-compose down --remove-orphans)",
+    "compose:up:dev": "(cd app && docker-compose -f docker-compose.dev.yml up -d --build)",
+    "compose:down:dev": "(cd app && docker-compose -f docker-compose.dev.yml down --remove-orphans)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morallys/todo-ebytr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morallys/todo-ebytr/issues"
+  },
+  "homepage": "https://github.com/morallys/todo-ebytr#readme",
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "eslint-config-trybe-backend-typescript": "^1.0.0",
+    "jest": "^28.1.2",
+    "mocha": "^10.0.0",
+    "sequelize": "^6.21.2",
+    "sequelize-cli": "^6.4.1"
+  },
+  "dependencies": {
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
